@@ -20,11 +20,53 @@ if ! command -v curl > /dev/null; then
 fi
 
 
+
+
 mkdir -p "$CONFIG_DIR"
 
 if [[ -f "$CONFIG_FILE" ]]; then
   source "$CONFIG_FILE"
 fi
+
+#---------------------------------------------------------------------------------------------------------------------------------
+
+HOSTS=("8.8.8.8" "1.1.1.1" "208.67.222.222")
+ 
+PING_COUNT=1
+ 
+TIMEOUT=2
+ 
+# OS-specific ping flags (Linux uses -W for per-packet timeout; macOS uses -t for deadline)
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    # macOS: -t sets deadline timeout in seconds
+    PING_TIMEOUT="-t $TIMEOUT"
+else
+    # Linux/BSD: -W sets per-packet wait timeout in seconds
+    PING_TIMEOUT="-W $TIMEOUT"
+fi
+ 
+# ping a host and return 0 (success) or 1 (failure)
+ping_host() {
+    local host=$1
+    ping -c $PING_COUNT $PING_TIMEOUT -q "$host" > /dev/null 2>&1
+    return $?
+}
+ 
+connection_up=0  
+ 
+for host in "${HOSTS[@]}"; do
+    if ping_host "$host"; then
+        connection_up=1  
+        break  
+    fi
+done
+ 
+if [ $connection_up -ne 1 ]; then
+    dialog --msgbox "Internet connection is DOWN" 0 0
+    clear
+    exit 1
+fi
+
 #---------------------------------------------------------------------------------------------------------------
 set_model(){
   MODEL_CHOICE=$(dialog --menu "Choose a model" 0 0 3 \
