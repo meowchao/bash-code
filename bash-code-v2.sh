@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+export DIALOGRC="$SCRIPT_DIR/bash-code.dialogrc"
+
 CONFIG_DIR="$HOME/.config/bash-code"
 CONFIG_FILE="$CONFIG_DIR/config"
 
@@ -161,6 +164,7 @@ fi
 BODY=$(jq -n --arg prompt "$PROMPT" --arg model "${GROQ_MODEL:-openai/gpt-oss-20b}" \
   '{model: $model, input: $prompt}')
 
+dialog --infobox "thinking..." 0 0
 RESPONSE=$(curl -s -X POST \
   -H "Authorization: Bearer $GROQ_API_KEY" \
   -H "Content-Type: application/json" \
