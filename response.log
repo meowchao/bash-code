@@ -31,3 +31,400 @@
   "responseId": "iK5PapXAMtaIjuMP8PnxuQg"
 }
 
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Yo! What's good?"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 3,
+    "candidatesTokenCount": 7,
+    "totalTokenCount": 801,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 3
+      }
+    ],
+    "thoughtsTokenCount": 791,
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-2.5-flash",
+  "responseId": "yclPau-JJ6bajuMP5_yTiQQ"
+}
+{
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\nPlease retry in 56.481596888s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.5-pro"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.5-pro"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.5-pro"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerDay-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.5-pro"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "56s"
+      }
+    ]
+  }
+}
+{
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.5-pro\nPlease retry in 28.038810935s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerDay-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.5-pro"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.5-pro"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerMinutePerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.5-pro"
+            }
+          },
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_requests",
+            "quotaId": "GenerateRequestsPerDayPerProjectPerModel-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemini-2.5-pro"
+            }
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "28s"
+      }
+    ]
+  }
+}
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Hello! How can I help you today?"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 1,
+    "candidatesTokenCount": 9,
+    "totalTokenCount": 10,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-2.5-flash-lite",
+  "responseId": "AcxParGHONvljuMPw_-JyAM"
+}
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "I am a large language model, trained by Google."
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 3,
+    "candidatesTokenCount": 11,
+    "totalTokenCount": 14,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 3
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-2.5-flash-lite",
+  "responseId": "E8xPatz_BYyEg8UPmJ-iuAg"
+}
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Hello! How can I help you today?"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 1,
+    "candidatesTokenCount": 9,
+    "totalTokenCount": 10,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-2.5-flash-lite",
+  "responseId": "XcxPaoriCPGojuMPtIvm0AM"
+}
+{
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+{
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Hello! How can I help you today?"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 1,
+    "candidatesTokenCount": 9,
+    "totalTokenCount": 10,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-2.5-flash-lite",
+  "responseId": "2cxPavPnIc29juMPwIWRmQg"
+}
+{
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Hello! How can I help you today?"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 1,
+    "candidatesTokenCount": 9,
+    "totalTokenCount": 10,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-2.5-flash-lite",
+  "responseId": "88xPao-6G4X8g8UP74mKuQg"
+}
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "I am sorry if I have said something that has upset you. I am still under development, and I am always learning. I will try to do better in the future."
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 2,
+    "candidatesTokenCount": 35,
+    "totalTokenCount": 37,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 2
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-2.5-flash-lite",
+  "responseId": "iM1PauK4FYLHpgfhlLSRCA"
+}
+{
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+{
+  "candidates": [
+    {
+      "content": {
+        "parts": [
+          {
+            "text": "Hi there! How can I help you today? 😊"
+          }
+        ],
+        "role": "model"
+      },
+      "finishReason": "STOP",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 1,
+    "candidatesTokenCount": 11,
+    "totalTokenCount": 12,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 1
+      }
+    ],
+    "serviceTier": "standard"
+  },
+  "modelVersion": "gemini-2.5-flash-lite",
+  "responseId": "ss1PapLMNPbKqfkPttGzoAM"
+}
+{"id":"resp_01kx56na1rfk88hwqncmk3316n","object":"response","status":"completed","created_at":1783659931,"output":[{"type":"reasoning","id":"resp_01kx56na1rfk8v1j5dc17c45jv","status":"completed","content":[{"type":"reasoning_text","text":"User says \"hi\". We just greet."}],"summary":[]},{"type":"message","id":"msg_01kx56na1rfk9ach5b3587jan2","status":"completed","role":"assistant","content":[{"type":"output_text","text":"Hello! How can I help you today?","annotations":[],"logprobs":null}]}],"previous_response_id":null,"model":"openai/gpt-oss-20b","reasoning":{"effort":"medium"},"max_output_tokens":null,"text":{"format":{"type":"text"}},"tools":[],"tool_choice":"auto","truncation":"disabled","metadata":{},"groq":null,"temperature":1,"top_p":1,"user":null,"service_tier":"default","background":false,"error":null,"incomplete_details":null,"usage":{"input_tokens":72,"input_tokens_details":{"cached_tokens":0},"output_tokens":28,"output_tokens_details":{"reasoning_tokens":10},"total_tokens":100},"parallel_tool_calls":true,"store":false,"top_logprobs":null,"max_tool_calls":null}
+{"id":"resp_01kx56nnqjeq7v9hskc9azs001","object":"response","status":"completed","created_at":1783659943,"output":[{"type":"reasoning","id":"resp_01kx56nnqjeq89ark082faqj7k","status":"completed","content":[{"type":"reasoning_text","text":"The user says \"how are you\". We respond politely. The developer instruction says nothing. The user presumably just wants a friendly reply. We'll say something like \"I'm just a program, but I'm here and ready to help\"."}],"summary":[]},{"type":"message","id":"msg_01kx56nnqjeq8s5j0e13kkf39q","status":"completed","role":"assistant","content":[{"type":"output_text","text":"I’m just a bundle of code, so I don’t have feelings, but I’m all charged up and ready to help you out! How can I assist you today?","annotations":[],"logprobs":null}]}],"previous_response_id":null,"model":"openai/gpt-oss-20b","reasoning":{"effort":"medium"},"max_output_tokens":null,"text":{"format":{"type":"text"}},"tools":[],"tool_choice":"auto","truncation":"disabled","metadata":{},"groq":null,"temperature":1,"top_p":1,"user":null,"service_tier":"default","background":false,"error":null,"incomplete_details":null,"usage":{"input_tokens":74,"input_tokens_details":{"cached_tokens":0},"output_tokens":90,"output_tokens_details":{"reasoning_tokens":46},"total_tokens":164},"parallel_tool_calls":true,"store":false,"top_logprobs":null,"max_tool_calls":null}
+{"id":"resp_01kx56q8tnejwagks28gxq91yy","object":"response","status":"completed","created_at":1783659995,"output":[{"type":"reasoning","id":"resp_01kx56q8tnejws12fg2zvzb39w","status":"completed","content":[{"type":"reasoning_text","text":"We need to respond. There's no special instruction. Probably just respond politely."}],"summary":[]},{"type":"message","id":"msg_01kx56q8tnejx9pfnz545qtn4b","status":"completed","role":"assistant","content":[{"type":"output_text","text":"Hello! How can I help you today?","annotations":[],"logprobs":null}]}],"previous_response_id":null,"model":"openai/gpt-oss-20b","reasoning":{"effort":"medium"},"max_output_tokens":null,"text":{"format":{"type":"text"}},"tools":[],"tool_choice":"auto","truncation":"disabled","metadata":{},"groq":null,"temperature":1,"top_p":1,"user":null,"service_tier":"default","background":false,"error":null,"incomplete_details":null,"usage":{"input_tokens":72,"input_tokens_details":{"cached_tokens":0},"output_tokens":34,"output_tokens_details":{"reasoning_tokens":16},"total_tokens":106},"parallel_tool_calls":true,"store":false,"top_logprobs":null,"max_tool_calls":null}
+{"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+{"error":{"message":"Invalid API Key","type":"invalid_request_error","code":"invalid_api_key"}}
+{"id":"resp_01kx5en91xekht3rhjwmdaat0x","object":"response","status":"completed","created_at":1783668319,"output":[{"type":"reasoning","id":"resp_01kx5en91xekj8ap37ty8fy2fx","status":"completed","content":[{"type":"reasoning_text","text":"User says \"hi\". They just greeted. Probably respond with a friendly greeting."}],"summary":[]},{"type":"message","id":"msg_01kx5en91xekjt915dp4dww8qr","status":"completed","role":"assistant","content":[{"type":"output_text","text":"Hello! 👋 How can I help you today?","annotations":[],"logprobs":null}]}],"previous_response_id":null,"model":"openai/gpt-oss-20b","reasoning":{"effort":"medium"},"max_output_tokens":null,"text":{"format":{"type":"text"}},"tools":[],"tool_choice":"auto","truncation":"disabled","metadata":{},"groq":null,"temperature":1,"top_p":1,"user":null,"service_tier":"default","background":false,"error":null,"incomplete_details":null,"usage":{"input_tokens":72,"input_tokens_details":{"cached_tokens":0},"output_tokens":37,"output_tokens_details":{"reasoning_tokens":17},"total_tokens":109},"parallel_tool_calls":true,"store":false,"top_logprobs":null,"max_tool_calls":null}
+{"id":"resp_01kx5er204e2dttqwb0v0a78qv","object":"response","status":"completed","created_at":1783668410,"output":[{"type":"reasoning","id":"resp_01kx5er204e2eanr0ce8vq8hkm","status":"completed","content":[{"type":"reasoning_text","text":"The user says \"hi\". We need to respond appropriately. Likely a friendly greeting."}],"summary":[]},{"type":"message","id":"msg_01kx5er204e2estf5y0305qtbe","status":"completed","role":"assistant","content":[{"type":"output_text","text":"Hello! How can I help you today?","annotations":[],"logprobs":null}]}],"previous_response_id":null,"model":"openai/gpt-oss-20b","reasoning":{"effort":"medium"},"max_output_tokens":null,"text":{"format":{"type":"text"}},"tools":[],"tool_choice":"auto","truncation":"disabled","metadata":{},"groq":null,"temperature":1,"top_p":1,"user":null,"service_tier":"default","background":false,"error":null,"incomplete_details":null,"usage":{"input_tokens":72,"input_tokens_details":{"cached_tokens":0},"output_tokens":37,"output_tokens_details":{"reasoning_tokens":19},"total_tokens":109},"parallel_tool_calls":true,"store":false,"top_logprobs":null,"max_tool_calls":null}
+{"id":"resp_01kx5evjpbeh0sz35q67s72rm5","object":"response","status":"completed","created_at":1783668525,"output":[{"type":"reasoning","id":"resp_01kx5evjpbeh1byj8qcep67d55","status":"completed","content":[{"type":"reasoning_text","text":"User says \"hi\". Simple greeting. Should respond politely."}],"summary":[]},{"type":"message","id":"msg_01kx5evjpbeh1v7ph7kj3mm9r5","status":"completed","role":"assistant","content":[{"type":"output_text","text":"Hello! How can I help you today?","annotations":[],"logprobs":null}]}],"previous_response_id":null,"model":"openai/gpt-oss-20b","reasoning":{"effort":"medium"},"max_output_tokens":null,"text":{"format":{"type":"text"}},"tools":[],"tool_choice":"auto","truncation":"disabled","metadata":{},"groq":null,"temperature":1,"top_p":1,"user":null,"service_tier":"default","background":false,"error":null,"incomplete_details":null,"usage":{"input_tokens":72,"input_tokens_details":{"cached_tokens":0},"output_tokens":31,"output_tokens_details":{"reasoning_tokens":13},"total_tokens":103},"parallel_tool_calls":true,"store":false,"top_logprobs":null,"max_tool_calls":null}
+{"id":"resp_01kx5ew62dfpjt75k9rghkv1ae","object":"response","status":"completed","created_at":1783668545,"output":[{"type":"reasoning","id":"resp_01kx5ew62dfpkbteht7srd0jfh","status":"completed","content":[{"type":"reasoning_text","text":"User: \"how are you\". We need to respond as ChatGPT. They want a friendly answer. Could ask them how they are, maybe mention I'm fine. It's a short question. Probably answer politely: I'm good, thanks."}],"summary":[]},{"type":"message","id":"msg_01kx5ew62dfpksrbeygjfa8n02","status":"completed","role":"assistant","content":[{"type":"output_text","text":"I’m doing great—thanks for asking! How about you?","annotations":[],"logprobs":null}]}],"previous_response_id":null,"model":"openai/gpt-oss-20b","reasoning":{"effort":"medium"},"max_output_tokens":null,"text":{"format":{"type":"text"}},"tools":[],"tool_choice":"auto","truncation":"disabled","metadata":{},"groq":null,"temperature":1,"top_p":1,"user":null,"service_tier":"default","background":false,"error":null,"incomplete_details":null,"usage":{"input_tokens":75,"input_tokens_details":{"cached_tokens":0},"output_tokens":70,"output_tokens_details":{"reasoning_tokens":48},"total_tokens":145},"parallel_tool_calls":true,"store":false,"top_logprobs":null,"max_tool_calls":null}
+{"id":"resp_01kx5ewykce7280rxenje7jftz","object":"response","status":"completed","created_at":1783668570,"output":[{"type":"reasoning","id":"resp_01kx5ewykce72s2g4qnzc5fkg7","status":"completed","content":[{"type":"reasoning_text","text":"We have a user saying \"i am working on somthing cool cant wait to show you\". This is a casual conversation. We can respond encouraging. We should ask about what they're working on? It's a casual chat, not a request. So respond friendly."}],"summary":[]},{"type":"message","id":"msg_01kx5ewykce738s13w80gqrt4t","status":"completed","role":"assistant","content":[{"type":"output_text","text":"That’s awesome! 🎉 What’s the project about? I’d love to hear more whenever you’re ready to share.","annotations":[],"logprobs":null}]}],"previous_response_id":null,"model":"openai/gpt-oss-20b","reasoning":{"effort":"medium"},"max_output_tokens":null,"text":{"format":{"type":"text"}},"tools":[],"tool_choice":"auto","truncation":"disabled","metadata":{},"groq":null,"temperature":1,"top_p":1,"user":null,"service_tier":"default","background":false,"error":null,"incomplete_details":null,"usage":{"input_tokens":84,"input_tokens_details":{"cached_tokens":0},"output_tokens":87,"output_tokens_details":{"reasoning_tokens":53},"total_tokens":171},"parallel_tool_calls":true,"store":false,"top_logprobs":null,"max_tool_calls":null}
