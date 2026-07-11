@@ -149,7 +149,7 @@ chat() {
     }
   ]')
 
-  printf '\\Start chatting. Type /clear to reset the conversation.\\\n\n' \
+  printf 'Start chatting. Type /clear to reset the conversation.\n\n' \
     > "$transcript_file"
 
   while true; do
@@ -182,7 +182,7 @@ chat() {
           }
         ]')
 
-        printf '\\Conversation cleared.\\\n\n' > "$transcript_file"
+        printf 'Conversation cleared.\n\n' > "$transcript_file"
         continue
         ;;
 
@@ -191,7 +191,7 @@ chat() {
         ;;
     esac
 
-    printf '\\Z1You:\\Zn\n%s\n\n' "$prompt" >> "$transcript_file"
+    printf 'you: %s\n\n' "$prompt" >> "$transcript_file"
 
     history=$(
       jq \
@@ -258,7 +258,7 @@ chat() {
       fi
     fi
 
-    printf '\\Z2Assistant:\\Zn\n%s\n\n' "$text" >> "$transcript_file"
+    printf 'Assistant: %s\n\n' "$text" >> "$transcript_file"
 
     jq -cn \
       --arg time "$(date --iso-8601=seconds)" \
@@ -295,7 +295,7 @@ chat() {
           }
         ]')
 
-        printf '\\New conversation started.\\\n\n' > "$transcript_file"
+        printf 'New conversation started.\n\n' > "$transcript_file"
         ;;
 
       *)
